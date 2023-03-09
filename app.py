@@ -13,7 +13,7 @@ load_dotenv('.env')
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 
-app = ttk.Window(title="Klient ChatGPT v. 0.1", themename="superhero", iconphoto ='ai32.png', size=(1200, 800))
+app = ttk.Window(title="ChatGPT Klient v. 0.1", themename="superhero", iconphoto ='ai32.png', size=(1200, 800))
 app.place_window_center()
 
 colors = app.style.colors
@@ -46,7 +46,7 @@ def clear_notes():
     question_entry.delete(0, END)
 
 def about():
-    md = MessageDialog(message = 'Klient ChatGPT 0.1\n\nUmożliwia zadawanie pytań do ChatGPT poprzez API\n\nAutor: Leszek Owczarek\nLicencja: MIT', title = 'Informacja', buttons=["OK:primary"])
+    md = MessageDialog(message = 'Klient ChatGPT 0.1\n\nUmożliwia zadawanie pytań do ChatGPT poprzez API\n\nAutor: Leszek Owczarek, Dimex\nLicencja: MIT', title = 'Informacja', buttons=["OK:primary"])
     md.show()
 
 container1 = ttk.Frame()
